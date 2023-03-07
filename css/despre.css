@@ -2,7 +2,7 @@
 
 :root {
     --font-color: #2e2e2e;
-    --base-color: #eeeeee;
+    --base-color: #dfdfdf;
     --secondary-color: #45067d;
     --action-color: #f28500;
     --secondary-transparent: #45067dC0;
@@ -82,6 +82,22 @@
     float: right;
     margin-left: 30px;
     margin-bottom: 5px;
+}
+
+.margin {
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-top: 0;
+    margin-bottom: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 679px) {

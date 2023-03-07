@@ -5,7 +5,7 @@
     --navbar-height: 80px;
     --underline-height: 10px;
     --font-color: #2e2e2e;
-    --base-color: #eeeeee;
+    --base-color: #dfdfdf;
     --secondary-color: #45067d;
     --action-color: #f28500;
     --secondary-transparent: #45067dC0;
@@ -27,7 +27,7 @@ body {
     margin: 0;
     min-height: var(--page-height);
     margin-top: var(--navbar-height);
-    background: linear-gradient(
+    /*background: linear-gradient(
         90deg,
         rgba(255, 0, 0, .25) 0%,
         rgba(255, 154, 0, .25) 10%,
@@ -40,7 +40,7 @@ body {
         rgba(186, 12, 248, .25) 80%,
         rgba(251, 7, 217, .25) 90%,
         rgba(255, 0, 0, .25) 100%
-    );
+    );*/
 }
 
 .bold {
@@ -182,7 +182,7 @@ body {
 .main__container {
     width: 100%;
     min-height: var(--page-height);
-    background-image: url("../images/background-main-container.png");
+    /*background-image: url("../images/background-main-container.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -191,6 +191,7 @@ body {
 }
 
 .banner {
+    box-shadow: 0px 4px 11px 3px rgba(0,0,0,.35);
     height: 600px;
     border-bottom-right-radius: 250px;
     margin-top: 100px;
@@ -260,7 +261,7 @@ body {
 }
 
 .content__container {
-    background-color: var(--base-color);
+    background-color: #eee;
     width: 60%;
     min-height: calc(var(--page-height) - 1px);
     margin: 0 auto;
@@ -290,6 +291,28 @@ body {
         width: 100%;
         padding: 20px 10px;
     }
+}
+
+.tick {
+    background-image: url("../images/tick-purple.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 1.1em;
+    width: 1.1em;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.galerie {
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--action-color);
+    transition: all 300ms;
+}
+
+.galerie:hover {
+    color: var(--action-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 @media (max-width: 1019px) and (min-width: 680px) {
