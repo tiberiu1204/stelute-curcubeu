@@ -17,7 +17,7 @@
 }
 
 html {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Golos Text', sans-serif;
     margin: 0;
     height: var(--page-height);
     background-color: var(--base-color);
@@ -27,20 +27,6 @@ body {
     margin: 0;
     min-height: var(--page-height);
     margin-top: var(--navbar-height);
-    /*background: linear-gradient(
-        90deg,
-        rgba(255, 0, 0, .25) 0%,
-        rgba(255, 154, 0, .25) 10%,
-        rgba(208, 222, 33, .25) 20%,
-        rgba(79, 220, 74, .25) 30%,
-        rgba(63, 218, 216, .25) 40%,
-        rgba(47, 201, 226, .25) 50%,
-        rgba(28, 127, 238, .25) 60%,
-        rgba(95, 21, 242, .25) 70%,
-        rgba(186, 12, 248, .25) 80%,
-        rgba(251, 7, 217, .25) 90%,
-        rgba(255, 0, 0, .25) 100%
-    );*/
 }
 
 .bold {
@@ -64,6 +50,7 @@ body {
 
 .navbar__logo__link, .navbar__logo {
     height: 100%;
+    padding: 5px;
 }
 
 .navbar__pages__container {
@@ -99,7 +86,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 24px;
     color: var(--font-color);
     transition: color 400ms;
 }
@@ -182,7 +169,6 @@ body {
 .main__container {
     width: 100%;
     min-height: var(--page-height);
-    /*background-image: url("../images/background-main-container.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
