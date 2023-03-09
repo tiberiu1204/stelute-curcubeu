@@ -178,7 +178,7 @@ body {
 
 .banner {
     box-shadow: 0px 4px 11px 3px rgba(0,0,0,.35);
-    height: 600px;
+    height: 550px;
     border-bottom-right-radius: 250px;
     margin-top: 100px;
     background-image: url("../images/background-img.jpg");
@@ -192,10 +192,11 @@ body {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.banner__content::before {
+.banner__content::after {
     content: "";
 }
 
@@ -286,10 +287,24 @@ body {
 .stelute__curcubeu {
     height: 150px;
     display: block;
+    margin-top: 50px;
 }
 
 .banner__button__container {
     text-align: center;
+}
+
+.location__container {
+    padding: 50px 30px;
+}
+
+.location__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    border: 3px solid var(--action-color);
 }
 
 @media (max-width: 1019px) and (min-width: 680px) {
@@ -316,9 +331,13 @@ body {
     }
     .stelute__curcubeu {
         height: 130px;
+        margin-top: 40px;
     }
     .banner__content {
         gap: 40px;
+    }
+    .location__image {
+        height: 400px;
     }
 }
 
@@ -345,9 +364,13 @@ body {
         padding: 20px 10px;
     }
     .stelute__curcubeu {
+        margin-top: 30px;
         height: 100px;
     }
     .banner__content {
         gap: 30px;
+    }
+    .location__image {
+        height: 200px;
     }
 }

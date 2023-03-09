@@ -26,7 +26,6 @@ addEventListener("resize", event => {
         navContainer.classList.remove("hidden");
         navMenuBtn.classList.add("hidden");
         navMenuContent.classList.remove("show-menu-content");
-        document.body.style.overflow = "auto";
         navbar.style.padding = "0 70px";
     }
 
@@ -43,7 +42,6 @@ addEventListener("resize", event => {
 
 navMenuBtn.addEventListener("click", event => {
     navMenuContent.classList.add("show-menu-content");
-    document.body.style.overflow = "hidden";
     if(window.innerWidth < 640) {
         navMenuContent.style.width = "100%";
     } else {
@@ -53,7 +51,6 @@ navMenuBtn.addEventListener("click", event => {
 
 closeNavMenuButton.addEventListener("click", event => {
     navMenuContent.classList.remove("show-menu-content");
-    document.body.style.overflow = "auto";
 });
 
 //underline and color pages link when hover
