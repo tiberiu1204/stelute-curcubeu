@@ -117,6 +117,9 @@
     .personnel__info__container {
         padding: 30px 20px;
     }
+    .margin {
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 1019px) and (min-width: 680px) {
@@ -135,5 +138,8 @@
     }
     .personnel__info__container {
         padding: 50px 30px;
+    }
+    .margin {
+        margin-bottom: 22px;
     }
 }

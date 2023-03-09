@@ -294,23 +294,19 @@ body {
     text-align: center;
 }
 
-.location__container {
-    padding: 50px 30px;
-}
-
 .location__image {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     box-shadow: 0 0 20px 5px rgba(0, 0, 0, .25);
     border-radius: 20px;
-    border: 3px solid var(--action-color);
 }
 
 @media (max-width: 1019px) and (min-width: 680px) {
     .banner {
         height: 500px;
         border-bottom-right-radius: 178.5px;
+        margin-top: 85px;
     }
     .landing__title {
         font-size: 47px;
@@ -337,7 +333,7 @@ body {
         gap: 40px;
     }
     .location__image {
-        height: 400px;
+        height: 300px;
     }
 }
 
@@ -345,6 +341,7 @@ body {
     .banner {
         height: 300px;
         border-bottom-right-radius: 107.1px;
+        margin-top: 70px;
     }
     .landing__title {
         font-size: 27px;
