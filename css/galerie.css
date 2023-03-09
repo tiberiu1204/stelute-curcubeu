@@ -1,0 +1,30 @@
+:root {
+    --font-color: #2e2e2e;
+    --base-color: #dfdfdf;
+    --secondary-color: #45067d;
+    --action-color: #f28500;
+    --secondary-transparent: #45067dC0;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.photo {
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, .20);
+}
+
+.photo__description {
+    font-style: italic;
+    text-align: center;
+    color: var(--font-color);
+}
